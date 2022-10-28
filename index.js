@@ -35,3 +35,11 @@ function increaseGuestScoreThree(){
     guestScore += 3
     guestStoreEl.textContent = guestScore
 }
+
+const refreshButton = document.querySelector('.new-game-button');
+
+const refreshPage = () => {
+  location.reload();
+}
+
+refreshButton.addEventListener('click', refreshPage)
